@@ -52,5 +52,8 @@ npm run build:release
 ├── .env.dev            # 开发环境
 ├── .env.release        # 发布环境
 ├── src
-└   └── vite-env.d.ts   # env常量类型
+|   └── vite-env.d.ts   # env常量类型
+└── dist                
+    ├── dev             # dev环境产物
+    └── release         # release环境产物
 ```
