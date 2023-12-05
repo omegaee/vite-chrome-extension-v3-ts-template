@@ -6,5 +6,11 @@
   "action": {
     "default_popup": "src/index.html"
   },
+  "web_accessible_resources": [
+    {
+      "resources": ["src/inject.ts"],
+      "matches": ["http://*/*", "https://*/*"]
+    }
+  ],
   "permissions": ["storage"]
 }

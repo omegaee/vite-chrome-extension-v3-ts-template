@@ -4,21 +4,21 @@
     "module": "ESNext",
     "useDefineForClassFields": true,
     "lib": ["ESNext", "ES2020", "DOM", "DOM.Iterable"],
-    "skipLibCheck": true, // 跳过库文件.d.ts，可加速编译
+    "skipLibCheck": true,
     "types": ["node", "chrome"],
   
     /* Bundler mode */
-    "moduleResolution": "Bundler",  //解析策略，Bundler将由打包工具负责处理
-    "allowImportingTsExtensions": true,  // 允许导入.ts的文件
-    "resolveJsonModule": true,  // 允许导入.json作为模块
-    "isolatedModules": true,  // 确保每个文件可单独编译，对Babel很有用
-    "noEmit": true,  // 不生成输出文件，通常使用打包工具时启用
+    "moduleResolution": "Bundler",
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
 
     /* Linting */
-    "strict": true,  // 启用所有严格类型检查选项
-    "noUnusedLocals": true,  // 报告未使用局部变量的错误
-    "noUnusedParameters": true,  // 报告未使用的函数参数错误
-    "noFallthroughCasesInSwitch": true,  // 防止switch语句case落空
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
   },
   "include": ["src/*.d.ts", "src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx"],  // 指定编译器应该包含哪些文件夹
   "references": [{ "path": "./tsconfig.node.json" }]
